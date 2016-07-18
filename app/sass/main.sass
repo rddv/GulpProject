@@ -1,0 +1,62 @@
+@import "bourbon"
+@import "_fonts.sass"
+@import "_var.sass"
+
+body
+	font-size: 60px
+	margin: 0
+	padding: 0
+	font-size: 15px
+	min-width: 320px
+	position: relative
+	line-height: em(22px)
+	font-family: "RalewayRegular", sans-serif
+	overflow-x: hidden
+	color: $main-color
+
+.hidden
+	display: none
+
+a, a:hover, a:focus,  a:active
+	color: $main-color
+	text-decoration: underline
+	outline: none
+
+.headers
+	font-family: "", $helvetica
+	text-transform: uppercase
+	font-weight: normal
+	color: 
+
+h1, h2, h3, h4, h5, h6
+	@extend .headers
+	line-height: em(22px)
+
+h1
+	font-size: em(50px)
+
+h2
+	font-size: em(32px)
+
+h3
+	font-size: em(26px)
+
+b, strong
+	font-family: "", $helvetica
+	font-weight: normal
+
+.before
+	content: ''
+	width: 100%
+	height: 100%
+	position: absolute
+	left: 0
+	top: 0
+
+.trans
+	transition: all .5s ease
+
+
+
+/*end of file*/
+@import "_media.sass"
